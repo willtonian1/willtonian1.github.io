@@ -1,7 +1,12 @@
 .heading{
     text-align:center;
-    text-decoration-color: blue;
+    color: blue;
     background-color:aquamarine;
+    text-align: center;
+      text-decoration-color: white;
+
+      font-family:'Courier New', Courier, monospace;
+    
 }
 
 
@@ -12,7 +17,7 @@
   }
   
   .row div {
-    width: 25%;
+    width: 22%;
   }
   
   .noMargin {
@@ -22,14 +27,16 @@
   .one {
     background-color:blueviolet;
     padding: 1%;
-    border: 15px solid aquamarine;
+    border: 10px solid aquamarine;
     color: white;
     font-family:'Courier New', Courier, monospace;
+    border-radius: 25px;
+    margin: 5px;
 
   }
 
   .background{
-    background-color: darkgray;  /* fallback for old browsers */
+    background-color: blueviolet;  /* fallback for old browsers */
    
   }
   .text1 {
