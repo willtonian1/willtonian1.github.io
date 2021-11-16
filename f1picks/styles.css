@@ -10,7 +10,7 @@ background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, F
 
 .title1{
     font-size: 2rem;
-    color: #ff0000;
+    color: #ffcccb;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -63,7 +63,7 @@ background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, F
     text-align: center;
     font-family: "Lucida Console";
     font-size: 2rem;
-    color: #ff0000;
+    color: #ffcccb;
     text-shadow: 2px ;
 }
 
