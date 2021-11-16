@@ -51,5 +51,8 @@
 .acheivements{
     color: white;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    list-style-type: circle;
+    
     
 }
