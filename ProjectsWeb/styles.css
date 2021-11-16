@@ -48,11 +48,18 @@
     
   }
 
+
+.h2{
+text-align:center;
+    color: white;
+      font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
 .acheivements{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     list-style-type: circle;
-    
+     list-style-position: inside;
     
 }
