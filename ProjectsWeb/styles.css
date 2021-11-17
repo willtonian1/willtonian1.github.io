@@ -48,18 +48,67 @@
     
   }
 
+  .arduinoHead{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    text-decoration:underline;
+  }
 
-.h2{
-text-align:center;
-    color: white;
-      font-family: 'Courier New', Courier, monospace;
-    text-decoration: underline;
-}
-.acheivements{
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    list-style-type: circle;
-     list-style-position: inside;
+  .backdrop2{
+    background-color:#696969;
+
+  }
+
+  h2{
+    text-align:center;
+        color: white;
+          font-family: 'Courier New', Courier, monospace;
+        text-decoration: underline;
+    }
+    .acheivements{
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        list-style-type: circle;
+         list-style-position: inside;
+        
+    }
     
-}
+    .link{
+
+      background-color:blueviolet;
+    padding: 1%;
+    border: 10px solid aquamarine;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 25px;
+    margin: 5px;
+    text-decoration: none;
+    width: 22%;
+    }
+
+
+    @media only screen and (max-width: 600px){
+
+      .row{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        justify-items:center;
+        gap: 5px;
+    
+        
+
+      }
+      .row div{
+        
+
+        width: 70%;
+       
+      }
+
+      .link{
+        width: 70%;
+      }
+      
+    }
