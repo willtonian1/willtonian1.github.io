@@ -1,6 +1,6 @@
 *{
-	background-color: #66a5ad;
-	font-family: 'Ubuntu', monospace;;text-align: center;
+	font-family: 'Ubuntu', monospace; 
+	text-align: center;
 	align-items: center;
 	margin: 0px;
 	padding: 0px;
@@ -144,6 +144,7 @@ h1{
 	top: 0;
 	right: 0;
 	text-align: left;
+	height: 60px;
 } 
 .navlist{
   list-style-type: none;
@@ -174,3 +175,16 @@ li a:hover {
 .refresh_logo{
 	background-color: #66a5ad
 }
+
+/*projects*/
+.projects_section {
+	display: grid; 
+	grid-template-columns: 1fr 1fr; 
+	grid-template-rows: 1fr; 
+	gap: 0px 10px; 
+	grid-template-areas: 
+	  ". ."; 
+  
+	  height:700px;
+  }
+  
