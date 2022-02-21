@@ -1,3 +1,6 @@
+
+/*most confusing code i ever wrote*/
+
 image_array = [['1',JSON.parse(localStorage.getItem(1))],
 ['2',JSON.parse(localStorage.getItem(2))],
 ['3',JSON.parse(localStorage.getItem(3))],
