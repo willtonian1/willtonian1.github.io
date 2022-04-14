@@ -26,8 +26,8 @@ const cube = {
 };
 
 const cube2 = {
-	geometry: new THREE.BoxGeometry(1,1,1), 
-	material: new THREE.MeshBasicMaterial({color: 0xff0000})
+	geometry: new THREE.BoxGeometry(2,2,2), 
+	material: new THREE.MeshBasicMaterial({ color: 0xff0000 })
 };
 
 
