@@ -4,16 +4,35 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>willtonian1</title>
+    <title>Tom's App</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
 </head>
 
-<body id="body">
-    <!-- Including the three.js library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.min.js"></script>
-    <script src="script.js"></script>
 
-    <canvas id="c"></canvas>
+<body>
+    <!-- Including the three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.min.js">
+    </script>
+
+    <div id='app' class='absolute text-white absolute text-center' style='top:50%; transform: Translate(-50%, -50%); left: 50%'>
+
+        <h1 class='text-sm uppercase'>I'm Tom</h1>
+        <p class='text-2xl mt-2'>I am an aspiring developer currently at secondary school @Hampton</p>
+        <button class='border px-4 py-2 text-sm rounded-lg mt-3 hover:bg-white 
+				hover:text-gray-800'>View CV</button>
+    </div>
+
+
+
+    <script src="script.js" type='module'></script>
+
 </body>
 
 </html>
