@@ -1,6 +1,7 @@
 // The three.js scene: the 3D world where you put objects
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.136.0/examples/jsm/controls/OrbitControls.js';
 
+
 const scene = new THREE.Scene();
 
 // The camera
@@ -99,13 +100,16 @@ PlaneMesh3.position.x = -5;
 PlaneMesh3.position.y += 4;
 PlaneMesh3.position.z = 5;
 
+//load up 
+//var loader = new THREE.GLTFLoader();
+// loader.load('A GLTF FILE ', //function(gltf) {
+//   scene.add(gltf.scene);
 
-
-
-
-
-
-
+//  },
+//  undefined,
+//function(error) {
+//   console.error(error);
+//  });
 
 //sphere time 
 
