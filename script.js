@@ -1,8 +1,5 @@
 // The three.js scene: the 3D world where you put objects
-import * as THREE from "/node_modules/@types/three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-
+import { OrbitControls } from 'https://cdn.skypack.dev/three@0.136.0/examples/jsm/controls/OrbitControls.js';
 
 const scene = new THREE.Scene();
 
