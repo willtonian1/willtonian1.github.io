@@ -63,7 +63,6 @@ sphere.position.set(0, 0, 3)
 
 function animate() {
 
-    camera.position.z -= 0.-05;
     requestAnimationFrame(animate)
     renderer.render(scene, camera)
     controls.update();
