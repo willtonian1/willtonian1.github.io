@@ -48,72 +48,10 @@ controls.screenSpacePanning = true;
 
 
 
-//flooor
+//texture
 
 var textureLoader2 = new THREE.TextureLoader();
 const planeTexture2 = new textureLoader2.load("ocean.jpg")
-
-
-
-
-const planeGeo2 = new THREE.PlaneGeometry(10, 100)
-const planeMat2 = new THREE.MeshPhongMaterial({
-    color: 0xfffffff,
-    side: THREE.DoubleSide,
-    map: planeTexture2,
-
-})
-const PlaneMesh2 = new THREE.Mesh(planeGeo2, planeMat2)
-scene.add(PlaneMesh2)
-
-
-
-PlaneMesh2.rotation.x = Math.PI / 2;
-PlaneMesh2.position.y = -1;
-PlaneMesh2.position.z = 5;
-
-
-
-
-//side
-
-var textureLoader3 = new THREE.TextureLoader();
-const planeTexture3 = new textureLoader2.load("ocean.jpg")
-
-
-
-
-const planeGeo3 = new THREE.PlaneGeometry(10, 100)
-const planeMat3 = new THREE.MeshPhongMaterial({
-    color: 0xfffffff,
-    side: THREE.DoubleSide,
-    map: planeTexture3
-
-})
-const PlaneMesh3 = new THREE.Mesh(planeGeo3, planeMat3)
-scene.add(PlaneMesh3)
-
-PlaneMesh3.rotation.y = Math.PI / 2;
-PlaneMesh3.rotation.x = Math.PI / 2;
-PlaneMesh3.position.x = -5;
-PlaneMesh3.position.y += 4;
-PlaneMesh3.position.z = 5;
-
-//load up 
-
-//const loader = new GLTFLoader()
-//loader.load(
-  //  'room.glb', function(gltf){
-    //    scene.add(gltf.scene)
-    //},
-    //(xhr) => {
-      //  console.log((xhr.loaded / xhr.total) * 100 + '% loaded')
-   // },
-    //(error) => {
-      //  console.log(error)
-    //}
-//)
-
 
 //sphere time 
 
@@ -121,11 +59,11 @@ const geometry = new THREE.SphereGeometry(2, 32, 16);
 const material = new THREE.MeshBasicMaterial({ color: 0xffffff, map: planeTexture2 });
 const sphere = new THREE.Mesh(geometry, material);
 scene.add(sphere);
-sphere.position.set(5, 8, -5)
+sphere.position.set(0, 0, 3)
 
 function animate() {
 
-    camera.position.z -= 0.01;
+    camera.position.z -= 0.-05;
     requestAnimationFrame(animate)
     renderer.render(scene, camera)
     controls.update();
