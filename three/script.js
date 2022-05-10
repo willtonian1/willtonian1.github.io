@@ -1,6 +1,8 @@
 // The three.js scene: the 3D world where you put objects
-import { OrbitControls } from 'https://cdn.skypack.dev/three@0.136.0/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js";
+import * as THREE from "/node_modules/@types/three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+
 
 const scene = new THREE.Scene();
 
@@ -102,7 +104,18 @@ PlaneMesh3.position.z = 5;
 
 //load up 
 
-
+//const loader = new GLTFLoader()
+//loader.load(
+  //  'room.glb', function(gltf){
+    //    scene.add(gltf.scene)
+    //},
+    //(xhr) => {
+      //  console.log((xhr.loaded / xhr.total) * 100 + '% loaded')
+   // },
+    //(error) => {
+      //  console.log(error)
+    //}
+//)
 
 
 //sphere time 
