@@ -3,6 +3,7 @@
 html {
     box-sizing: border-box;
     background-color: black;
+    font-family: Ubuntu;
 }
 
 *,
@@ -27,17 +28,49 @@ body {
     flex: 1 1 50%;
 }
 
-@media screen and (max-width: 700px) {
-    .frame {
-        flex-direction: column;
-    }
-}
-
 #editor {
     font-family: Ubuntu;
     padding: .5em;
     background: black;
     color: white;
+    width: 50%;
+}
+
+.canvas_holder {
+    width: 50%;
+}
+
+#title_for_small {
+    display: none;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .frame {
+        flex-direction: column;
+        width: 100%;
+    }
+    #editor {
+        width: 100%;
+    }
+    .canvas_holder {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    li {
+        display: none;
+    }
+    #title_for_small {
+        display: block;
+    }
+    #navbar {
+        text-align: center;
+    }
+    #navlist {
+        text-align: center;
+    }
 }
 
 canvas {
