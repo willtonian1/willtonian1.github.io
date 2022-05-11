@@ -18,9 +18,9 @@ camera.position.z = 400;
 const scene = new THREE.Scene();
 const geometry = new THREE.BoxGeometry(200, 200, 200);
 const material = new THREE.MeshPhongMaterial({
-    color: 0x555555,
-    specular: 0xffffff,
-    shininess: 50,
+    color: 0x0000ff,
+    specular: 0xff0000,
+    shininess: 30,
     shading: THREE.SmoothShading
 });
 

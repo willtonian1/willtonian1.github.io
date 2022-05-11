@@ -14,6 +14,8 @@ html {
 
 body {
     margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .outer {}
@@ -38,6 +40,7 @@ body {
 
 .canvas_holder {
     width: 50%;
+    line-height: 0;
 }
 
 #title_for_small {
@@ -45,7 +48,7 @@ body {
     color: white;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .frame {
         flex-direction: column;
         width: 100%;
@@ -76,6 +79,8 @@ body {
 canvas {
     width: 100%;
     height: 100%;
+    line-height: 0;
+    display: block;
 }
 
 
