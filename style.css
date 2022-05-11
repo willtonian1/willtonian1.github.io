@@ -2,6 +2,7 @@
 
 html {
     box-sizing: border-box;
+    background-color: black;
 }
 
 *,
@@ -22,8 +23,14 @@ body {
     height: 100vh;
 }
 
-.frame>* {
+.frame {
     flex: 1 1 50%;
+}
+
+@media screen and (max-width: 700px) {
+    .frame {
+        flex-direction: column;
+    }
 }
 
 #editor {
@@ -41,13 +48,13 @@ canvas {
 
 /*navbar*/
 
-.navbar {
+#navbar {
     top: 0;
     right: 0;
     text-align: left;
 }
 
-.navlist {
+#navlist {
     list-style-type: none;
     margin: 0;
     padding: 0;
