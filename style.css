@@ -9,8 +9,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-canvas {
-    width: 100%;
+
+
+#c {
+    width: 10%;
     height: 100%;
-    padding: 0;
-}
+    display: block;
+ }

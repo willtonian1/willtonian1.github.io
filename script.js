@@ -6,27 +6,24 @@ const scene = new THREE.Scene();
 // The camera
 const camera = new THREE.PerspectiveCamera(
     75,
-    (window.innerWidth / 2) / window.innerHeight,
-    1,
-    1000
+    2,
+    0.1,
+    5
 );
 
 
 // The renderer: something that draws 3D objects onto the canvas
 const renderer = new THREE.WebGLRenderer({
     antialias: true,
-    canvas: document.querySelector('canvas')
+    canvas: document.querySelector('#c')
 });
 
-renderer.setSize(innerWidth / 2, innerHeight)
+renderer.setSize(innerWidth/2, innerHeight)
 
 // Append the renderer canvas into <body>
 //document.body.appendChild(renderer.domElement);
 
-const light = new THREE.DirectionalLight(0xFFFFFF, 0.3, )
 
-light.position.set(0, 0, 1)
-scene.add(light)
 
 
 const color = 0xFFFFFF;
@@ -34,7 +31,7 @@ const intensity = 0.5;
 const light2 = new THREE.AmbientLight(color, intensity);
 scene.add(light2);
 
-camera.position.z = 10
+camera.position.z = 4
 
 
 
@@ -51,22 +48,34 @@ controls.screenSpacePanning = true;
 //texture
 
 var textureLoader2 = new THREE.TextureLoader();
-const planeTexture2 = new textureLoader2.load("ocean.jpg")
+const planeTexture2 = new textureLoader2.load("assets/ocean.jpg")
 
 //sphere time 
 
-const geometry = new THREE.SphereGeometry(2, 32, 16);
+const geometry = new THREE.SphereGeometry(0.1, 32, 16);
 const material = new THREE.MeshBasicMaterial({ color: 0xffffff, map: planeTexture2 });
 const sphere = new THREE.Mesh(geometry, material);
 scene.add(sphere);
 sphere.position.set(0, 0, 3)
 
-function animate() {
-
-    requestAnimationFrame(animate)
-    renderer.render(scene, camera)
+function animate(time) {
+    sphere.rotation.y += 0.05;
+    
     controls.update();
+    time *=0.001;
+    const canvas = renderer.domElement;
+    camera.aspect = canvas.clientWidth / canvas.clientHeight;
+    camera.updateProjectionMatrix();
 
-}
+    
+    renderer.render(scene, camera)
+    requestAnimationFrame(animate)
+
+  }
+
+
 
 animate()
+
+
+
