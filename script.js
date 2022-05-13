@@ -24,6 +24,8 @@ const material = new THREE.MeshPhongMaterial({
     shading: THREE.SmoothShading
 });
 
+const light = new THREE.AmbientLight(0xa0a0a0); // soft white light
+scene.add(light);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.screenSpacePanning = true;
