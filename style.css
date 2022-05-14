@@ -28,6 +28,18 @@ body {
     line-height: 0;
 }
 
+#txt {
+    background: #ff0000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1fa2ff, #a6ffcb);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1fa2ff, #a6ffcb);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 .frame {
     flex: 1 1 50%;
 }
@@ -136,7 +148,8 @@ li a {
 }
 
 li a:hover {
-    background-color: gray
+    background-color: cyan;
+    color: black;
 }
 
 .refresh_logo {
@@ -144,7 +157,7 @@ li a:hover {
 }
 
 img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin: 0 auto;
 }
