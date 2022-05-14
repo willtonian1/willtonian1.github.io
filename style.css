@@ -4,6 +4,7 @@ html {
     box-sizing: border-box;
     background-color: black;
     font-family: Ubuntu;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -85,10 +86,28 @@ canvas {
     height: 100%;
 }
 
+#links {
+    font-family: Ubuntu;
+}
+
+#row1 {
+    background-color: #1a1a1a;
+}
+
+#row2 {
+    background-color: #1a1a1a;
+}
+
+#gradient_time {
+    width: 100%;
+    background: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 10%, 1) 100%);
+}
+
 
 /*navbar*/
 
 #navbar {
+    font-family: Ubuntu;
     top: 0;
     right: 0;
     text-align: left;
@@ -124,9 +143,8 @@ li a:hover {
     background-color: black
 }
 
-
-img{
-	width: 30px;
-	height:30px;
-	margin: 0 auto;
+img {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
 }
