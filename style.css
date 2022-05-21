@@ -62,6 +62,10 @@ body {
     color: white;
 }
 
+#interact_sign {
+    color: #1f2aff;
+}
+
 @media screen and (max-width: 1024px) {
     .frame {
         flex-direction: column;
@@ -91,9 +95,10 @@ body {
     }
     .canvas_holder {
         width: 50%;
+        height: 33%;
     }
     #frame {
-        height: 50%;
+        height: 33%;
     }
     #gittext {
         display: none;
@@ -159,7 +164,7 @@ li a {
 }
 
 li a:hover {
-    background-color: cyan;
+    background-color: #1fa2ff;
     color: black;
 }
 

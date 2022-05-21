@@ -61,40 +61,34 @@ scene.add(mesh);
 
 
 const geometry2 = new THREE.BoxGeometry(220, 10, 10);
-const material2 = new THREE.MeshBasicMaterial({ color: 0xffffff });
+const material2 = new THREE.MeshBasicMaterial({ color: 0x1f2aff });
 const mesh2 = new THREE.Mesh(geometry2, material2);
 scene.add(mesh2);
 mesh2.position.set(0, 105, 0);
 
 
-
-const geometry3 = new THREE.BoxGeometry(220, 10, 10);
-const material3 = new THREE.MeshBasicMaterial({ color: 0xffffff });
-const mesh3 = new THREE.Mesh(geometry3, material3);
+const mesh3 = new THREE.Mesh(geometry2, material2);
 scene.add(mesh3);
 mesh3.position.set(105, 0, 0);
 mesh3.rotation.z = 1.5708;
 
-const geometry4 = new THREE.BoxGeometry(220, 10, 10);
-const material4 = new THREE.MeshBasicMaterial({ color: 0xffffff });
-const mesh4 = new THREE.Mesh(geometry4, material4);
+const mesh4 = new THREE.Mesh(geometry2, material2);
 scene.add(mesh4);
 mesh4.position.set(-105, 0, 0);
 mesh4.rotation.z = 1.5708;
 
 
 
-const geometry5 = new THREE.BoxGeometry(220, 10, 10);
-const material5 = new THREE.MeshBasicMaterial({ color: 0xffffff });
-const mesh5 = new THREE.Mesh(geometry5, material5);
+
+const mesh5 = new THREE.Mesh(geometry2, material2);
 scene.add(mesh5);
 mesh5.position.set(0, -105, 0);
 
 
 
-
 const geometry6 = new THREE.BoxGeometry(50, 10, 10);
-const material6 = new THREE.MeshBasicMaterial({ color: 0xffffff });
+const material6 = new THREE.MeshBasicMaterial({ color: 0x1f2aff });
+
 const mesh6 = new THREE.Mesh(geometry6, material6);
 scene.add(mesh6);
 mesh6.position.set(-17, -125, 0);
@@ -103,9 +97,7 @@ mesh6.rotation.z = 1.5708 / 2;
 
 
 
-const geometry7 = new THREE.BoxGeometry(50, 10, 10);
-const material7 = new THREE.MeshBasicMaterial({ color: 0xffffff });
-const mesh7 = new THREE.Mesh(geometry7, material7);
+const mesh7 = new THREE.Mesh(geometry6, material6);
 scene.add(mesh7);
 mesh7.position.set(17, -125, 0);
 mesh7.rotation.z = -1.5708 / 2;
@@ -115,7 +107,7 @@ mesh7.rotation.z = -1.5708 / 2;
 
 
 const geometry8 = new THREE.BoxGeometry(30, 70, 30);
-const material8 = new THREE.MeshBasicMaterial({ color: 0xffffff });
+const material8 = new THREE.MeshBasicMaterial({ color: 0x1f2aff });
 const mesh8 = new THREE.Mesh(geometry8, material8);
 scene.add(mesh8);
 mesh8.position.set(145, -110, 5);
