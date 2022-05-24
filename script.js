@@ -1,10 +1,7 @@
-"use strict";
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.module.js';
 
-
-// The three.js scene: the 3D world where you put objects
-import { OrbitControls } from 'https://cdn.skypack.dev/three@0.126.0/examples/jsm/controls/OrbitControls.js';
-
-
+import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js';
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js';
 
 
 const renderer = new THREE.WebGLRenderer({ canvas: document.querySelector("canvas") });
@@ -54,90 +51,20 @@ directionalLight.position.set(0, 5, 10);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.screenSpacePanning = true;
 
-const mesh = new THREE.Mesh(geometry, material);
-scene.add(mesh);
 
 
 
 
-const geometry2 = new THREE.BoxGeometry(220, 10, 10);
-const material2 = new THREE.MeshBasicMaterial({ color: 0x1f2aff });
-const mesh2 = new THREE.Mesh(geometry2, material2);
-scene.add(mesh2);
-mesh2.position.set(0, 105, 0);
+const loader = new GLTFLoader();
+loader.load('assets/logo2.glb', function(glb) {
+    console.log(glb);
+    const root = glb.scene;
+    root.scale.set(0.1, 0.1, 0.1);
+    scene.add(root);
 
+});
 
-const mesh3 = new THREE.Mesh(geometry2, material2);
-scene.add(mesh3);
-mesh3.position.set(105, 0, 0);
-mesh3.rotation.z = 1.5708;
-
-const mesh4 = new THREE.Mesh(geometry2, material2);
-scene.add(mesh4);
-mesh4.position.set(-105, 0, 0);
-mesh4.rotation.z = 1.5708;
-
-
-
-
-const mesh5 = new THREE.Mesh(geometry2, material2);
-scene.add(mesh5);
-mesh5.position.set(0, -105, 0);
-
-
-
-const geometry6 = new THREE.BoxGeometry(50, 10, 10);
-const material6 = new THREE.MeshBasicMaterial({ color: 0x1f2aff });
-
-const mesh6 = new THREE.Mesh(geometry6, material6);
-scene.add(mesh6);
-mesh6.position.set(-17, -125, 0);
-mesh6.rotation.z = 1.5708 / 2;
-
-
-
-
-const mesh7 = new THREE.Mesh(geometry6, material6);
-scene.add(mesh7);
-mesh7.position.set(17, -125, 0);
-mesh7.rotation.z = -1.5708 / 2;
-
-
-
-
-
-const geometry8 = new THREE.BoxGeometry(30, 70, 30);
-const material8 = new THREE.MeshBasicMaterial({ color: 0x1f2aff });
-const mesh8 = new THREE.Mesh(geometry8, material8);
-scene.add(mesh8);
-mesh8.position.set(145, -110, 5);
-
-
-const geometry9 = new THREE.SphereGeometry(15, 32, 16);
-const material9 = new THREE.MeshBasicMaterial({ color: 0x000000 });
-const sphere = new THREE.Mesh(geometry9, material9);
-scene.add(sphere);
-
-sphere.position.set(145, -100, 10)
-
-
-
-
-const geometry10 = new THREE.SphereGeometry(15, 32, 16);
-const material10 = new THREE.MeshBasicMaterial({ color: 0x000000 });
-const sphere2 = new THREE.Mesh(geometry10, material10);
-scene.add(sphere2);
-
-sphere2.position.set(145, -125, 10)
-
-
-
-
-
-
-
-
-
+renderer.render(scene, camera);
 
 function resizeCanvasToDisplaySize() {
     const canvas = renderer.domElement;
