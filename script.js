@@ -2,7 +2,7 @@
 
 
 // The three.js scene: the 3D world where you put objects
-import { OrbitControls } from 'https://cdn.skypack.dev/three@0.136.0/examples/jsm/controls/OrbitControls.js';
+import { OrbitControls } from 'https://cdn.skypack.dev/three@0.126.0/examples/jsm/controls/OrbitControls.js';
 
 
 
@@ -129,6 +129,7 @@ const sphere2 = new THREE.Mesh(geometry10, material10);
 scene.add(sphere2);
 
 sphere2.position.set(145, -125, 10)
+
 
 
 
