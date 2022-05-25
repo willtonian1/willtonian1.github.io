@@ -9,15 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="100px"
+   height="100px"
+   viewBox="0 0 100 100"
    version="1.1"
-   id="svg8"
+   id="SVGRoot"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="logo.svg">
+   sodipodi:docname="logo2.svg">
   <defs
-     id="defs2" />
+     id="defs1424" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,26 +25,27 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="197.11042"
-     inkscape:cy="1092.6577"
-     inkscape:document-units="mm"
+     inkscape:zoom="5.12"
+     inkscape:cx="87.859599"
+     inkscape:cy="29.990269"
+     inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1046"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:grid-bbox="true" />
   <metadata
-     id="metadata5">
+     id="metadata1427">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,7 +55,7 @@
      id="layer1">
     <g
        id="g826"
-       transform="matrix(1.2479636,0,0,1.3172245,-298.34786,-37.566023)">
+       transform="matrix(1.0783248,0,0,2.6986388,-260.90911,-79.968072)">
       <path
          style="fill:#70cec8;stroke-width:0.35277778"
          d="m 312.3099,32.687015 c 10e-6,0 -1e-5,-2.9e-5 0,-3e-5 z"

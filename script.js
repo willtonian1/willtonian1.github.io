@@ -6,7 +6,7 @@ const renderer = new THREE.WebGLRenderer({ canvas: document.querySelector("canva
 // There's no reason to set the aspect here because we're going
 // to set it every frame anyway so we'll set it to 2 since 2
 // is the the aspect for the canvas default size (300w/150h = 2)
-const camera = new THREE.PerspectiveCamera(70, 2, 1, 0.01);
+const camera = new THREE.PerspectiveCamera(70, 2, 0.01, 1000);
 camera.position.z = 1;
 
 const scene = new THREE.Scene();
@@ -51,22 +51,25 @@ controls.screenSpacePanning = true;
 
 
 
-
-
-
-
+//LOADING £D LOGO MODEL 
 const loader2 = new GLTFLoader();
-loader2.load('logo2.glb', function(gltf) {
-    console.log(gltf);
-    const root2 = gltf.scene;
-    root2.scale.set(0.5, 0.5, 0.5);
-    scene.add(root2);
+loader2.load('assets/logo8.glb', function(gltf) {
+
+    gltf.scene.scale.set(9, 9, 9);
+    scene.add(gltf.scene);
 
 
-    root2.traverse(function(obj) { obj.frustumCulled = false; });
-    root2.frustumCulled = false
+    gltf.scene.traverse(function(object) {
+
+        object.frustumCulled = false;
+
+    });
+
+
+
 
 });
+
 
 renderer.render(scene, camera);
 
@@ -91,10 +94,7 @@ function animate(time) {
 
     resizeCanvasToDisplaySize();
 
-    //root2.rotation.x = time * 0.5;
 
-    //mesh.rotation.x = time * 0.5;
-    //mesh.rotation.y = time * 1;
 
     texture2.needsUpdate = true;
 

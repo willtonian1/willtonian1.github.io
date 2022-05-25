@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>TWT - Home</title>
+    <title>Tom Williams</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com">
     </script>
-    <link rel="icon" href="assets/icon.png">
+    <link rel="icon" href="assets/logo2.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
@@ -30,13 +30,25 @@
         <h1 id="title_for_small" class="text-base uppercase mt-5 text-center italic">Tom Williams - Software Engineer</h1>
         <ul class="text-2xl md: text-sm">
             <li class="nav_link2">
-                <a id='nav_links' class='refresh_logo' href='index.html'><img src="assets/logo.svg" /></a>
+                <a id='nav_links' class='refresh_logo' href='index.html'><img id='logo' src="assets/logo.svg" /></a>
             </li>
 
-            <li class="nav_link"><a id='nav_links3' href='#links'>Links</a></li>
-            <li class="nav_link"><a id='nav_links2' href="https://github.com/willtonian1">Github</a></li>
             <li class="nav_link">
-                <a id='nav_links1' href='#projects'>
+                <a id='nav_links1' href='#links'>
+                    <p class='inline' id="list_num">03.</p>
+                    <p class='inline' id="list_writing">Links</p>
+                </a>
+            </li>
+
+            <li class="nav_link">
+                <a href='#gradient_time' id='nav_links1'>
+                    <p class='inline' id="list_num">02.</p>
+                    <p class='inline' id="list_writing">Skills</p>
+                </a>
+            </li>
+
+            <li class="nav_link">
+                <a id='nav_links1' href='#editor'>
                     <p class='inline' id="list_num">01.</p>
                     <p class='inline' id="list_writing">About</p>
                 </a>
@@ -47,17 +59,16 @@
     <div class="frame">
 
         <div id="editor" class="text-white bg-black text-center flex justify-center flex-col align-middle">
-
-            <h1 class='text-sm uppercase mt-5'>I'm Tom</h1>
-            <p class='text-2xl mt-2 md: p-2' id="txt">Currently studying @Hampton School, and learning Computer Science</p>
+            <p id="intro_tease" class="text-sm">Hi, my name is</p>
+            <h1 id='intro' class='text-3xl uppercase '>Tom Williams.</h1>
+            <p class='text-xl mt-5 md: p-2' id="txt">Currently studying @Hampton School, and learning Computer Science.</p>
             <div>
-                <button class='border border-cyan-500 px-4 py-2 text-sm width-20 rounded-lg mt-5 hover:bg-cyan-500 
-				hover:text-gray-800'>View CV</button>
+                <button id='cv_button' class='border px-4 py-2 text-sm width-20 rounded-lg mt-5' style="border-color: #fe3fb3;">View CV</button>
             </div>
 
         </div>
         <div id="canvas_holder" class="text-center">
-            <p id='interact_sign' class="absolute mt-10 text-center z-10 text-sm italic w-full lg:w-1/2">Interact with 3D model</p>-
+            <p id='interact_sign' class="hidden absolute mt-10 text-center z-10 text-sm italic w-full lg:w-1/2">Interact with 3D model</p>-
             <canvas id="c"></canvas>
         </div>
     </div>
@@ -67,6 +78,7 @@
 
         <div id='skills_wrapper' class="w-full lg:inline md:inline sm:flex flex-col">
             <span id='skills_container' class="p-3 w-1/3 h-64 mt-10 lg:ml-20 mr-10 mb-10 inline-block float-left sm:ml-5 mr-5 flex-col flex md:flex ml-5 mr-5 flex-col">
+                <h1 class="text-center text-white mb-3">Skills</h1>
                 <div class="flex"><img src="assets/python.png" alt="">
                 <img src="assets/pygame.png" alt="">
                 <img src="assets/arduino.png" alt="">
