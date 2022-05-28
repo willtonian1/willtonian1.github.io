@@ -24,133 +24,154 @@
     <script type="module" src="script.js">
 
     </script>
+    <div class='flex inline'>
 
-    <nav id='navbar' class="text-2xl md:text-sm">
+        <div class="w-20 flex">
 
-        <h1 id="title_for_small" class="text-base uppercase mt-5 text-center italic">Tom Williams - Software Engineer</h1>
-        <ul class="text-2xl md: text-sm">
-            <li class="nav_link2">
-                <a id='nav_links' class='refresh_logo' href='index.html'><img id='logo' src="assets/logo.svg" /></a>
-            </li>
 
-            <li class="nav_link">
-                <a id='nav_links1' href='#links'>
-                    <p class='inline' id="list_num">03.</p>
-                    <p class='inline' id="list_writing">Links</p>
-                </a>
-            </li>
 
-            <li class="nav_link">
-                <a href='#gradient_time' id='nav_links1'>
-                    <p class='inline' id="list_num">02.</p>
-                    <p class='inline' id="list_writing">Skills</p>
-                </a>
-            </li>
-
-            <li class="nav_link">
-                <a id='nav_links1' href='#editor'>
-                    <p class='inline' id="list_num">01.</p>
-                    <p class='inline' id="list_writing">About</p>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="frame">
-
-        <div id="editor" class="text-white bg-black text-center flex justify-center flex-col align-middle">
-            <p id="intro_tease" class="text-sm">Hi, my name is</p>
-            <h1 id='intro' class='text-3xl uppercase '>Tom Williams.</h1>
-            <p class='text-xl mt-5 md: p-2' id="txt">Currently studying @Hampton School, and learning Computer Science.</p>
-            <div>
-                <button id='cv_button' class='border px-4 py-2 text-sm width-20 rounded-lg mt-5' style="border-color: #fe3fb3;">View CV</button>
-            </div>
 
         </div>
-        <div id="canvas_holder" class="text-center">
-            <p id='interact_sign' class="hidden absolute mt-10 text-center z-10 text-sm italic w-full lg:w-1/2">Interact with 3D model</p>-
-            <canvas id="c"></canvas>
-        </div>
-    </div>
+        <div class="w-full">
+            <nav id='navbar' class="text-2xl inline md:text-sm ">
 
-    <section id="gradient_time" class="flex w-full">
+                <h1 id="title_for_small" class="text-base uppercase mt-5 text-center italic">Tom Williams - Software Engineer</h1>
+                <ul class="text-2xl md: text-sm">
 
+                    <ul class="text-2xl md: text-sm">
+                        <li class="nav_link2">
+                            <a id='nav_links' class='refresh_logo' href='index.html'><img id='logo' src="assets/logo.svg" /></a>
+                        </li>
 
-        <div id='skills_wrapper' class="w-full lg:inline md:inline sm:flex flex-col">
-            <span id='skills_container' class="p-3 w-1/3 h-64 mt-10 lg:ml-20 mr-10 mb-10 inline-block float-left sm:ml-5 mr-5 flex-col flex md:flex ml-5 mr-5 flex-col">
-                <h1 class="text-center text-white mb-3">Skills</h1>
-                <div class="flex"><img src="assets/python.png" alt="">
-                <img src="assets/pygame.png" alt="">
-                <img src="assets/arduino.png" alt="">
-                </div>
-                
+                        <li class="nav_link">
+                            <a id='nav_links1' href='#links'>
+                                <p class='inline' id="list_num">03.</p>
+                                <p class='inline' id="list_writing">Links</p>
+                            </a>
+                        </li>
 
-            </span>
+                        <li class="nav_link">
+                            <a href='https://github.com/willtonian1' id='nav_links1'>
+                                <p class='inline' id="list_num">02.</p>
+                                <p class='inline' id="list_writing">Github</p>
+                            </a>
+                        </li>
 
-            <span id='skills_writing' class="p-3 w-1/2 h-64 mt-10 mb-10 inline-block mr-10 float-right sm:mr-5 ml-5 flex flex-col">
-                <ul id='skills_list' class="text-white font-Ubuntu">
-                    <li>Python: I've used Python for over 3 years, have become very experienced using Libraries like Pygame, Numpy, MatPlotLib, Pandas, and more.</li>
-                    <br />
-                    <li>Arduino: For 2 years, I have become proficient in controlling hardware using Arduino - <a href="">Link here to my Arduino Anagrams Project</a></li>
-                    <br />
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                        <li class="nav_link">
+                            <a id='nav_links1' href='#editor'>
+                                <p class='inline' id="list_num">01.</p>
+                                <p class='inline' id="list_writing">About</p>
+                            </a>
+                        </li>
+                    </ul>
+            </nav>
 
-            </span>
-        </div>
-    </section>
+            <div class="frame">
 
-    <section id='links' class='relative text-white font-Ubuntu bg-f1a2ff'>
-        <div class=''>
+                <div id="editor" class="text-white bg-black text-center flex justify-center flex-col align-middle">
+                    <p id="intro_tease" class="text-sm">Hi, my name is</p>
+                    <h1 id='intro' class='text-3xl uppercase '>Tom Williams.</h1>
+                    <p class='text-xl mt-5 md: p-2' id="txt">Currently studying @Hampton School, and learning Computer Science.</p>
 
-            <div id='row1' class='text-white text-center h-40 flex justify-center align-middle'>
+                    <div id="canvas_holder" class="text-center">
+                        <p id='interact_sign' class="hidden absolute mt-10 text-center z-10 text-sm italic w-full lg:w-1/2">Interact with 3D model</p>-
+                        <canvas id="c"></canvas>
+                    </div>
 
-                <a href="https://github.com/willtonian1" class="inline-block float-left w-1/3 text-white text-center flex justify-center flex-col align-middle sm: text-sm">
                     <div>
-                        <span class="sm:flex-col md:inline-block align-middle">
+                        <button id='cv_button' class='border px-4 py-2 text-sm width-20 rounded-lg mt-5' style="border-color: #fe3fb3;">View CV</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--            <section id="gradient_time" class="flex w-full">
+
+
+
+
+                <h1 id="skills_heading"> 02. Skills</h1>
+
+                <div id='skills_wrapper' class="w-full">
+
+                    <div class="inline">
+
+                        <button>Python</button>
+                        <button>Arduino</li>
+                    <button>Javascript</button>
+                        <button>Pygame</button>
+
+
+                    </div>
+
+
+
+                    <div class="inline">
+                        <img src="assets/arduino.png" alt="" />
+                    </div>
+
+
+
+
+
+                </div>
+            </section> -->
+
+            <section id='links' class='relative text-white font-Ubuntu bg-f1a2ff mt-20'>
+                <div class=''>
+
+                    <div id='row1' class='text-white text-center h-40 flex justify-center align-middle'>
+
+                        <a href="https://github.com/willtonian1" class="inline-block float-left w-1/3 text-white text-center flex justify-center flex-col align-middle sm: text-sm">
+                            <div>
+                                <span class="sm:flex-col md:inline-block align-middle">
                         <img src='assets/github3.png' class='object-center p-0.7'> </img></span>
-                        <span class="sm:flex-col md:inline-block align-middle">
+                                <span class="sm:flex-col md:inline-block align-middle">
                         <p id="gittext">All of my Programming</p>
                         <p>Projects</p>
                         </span>
 
-                    </div>
-                </a>
+                            </div>
+                        </a>
 
 
 
 
-                <a href="mailto:tomwtech@gmail.com" class="inline-block float-left w-1/3 text-white text-center flex justify-center flex-col align-middle sm: text-sm">
-                    <div>
-                        <span class="sm:flex-col md:inline-block align-middle">
+                        <a href="mailto:tomwtech@gmail.com" class="inline-block float-left w-1/3 text-white text-center flex justify-center flex-col align-middle sm: text-sm">
+                            <div>
+                                <span class="sm:flex-col md:inline-block align-middle">
                     <img src="assets/mail2.png" class="object-center p-0.7"></img>
                 </span>
-                        <span class="sm:flex-col md:inline-block align-middle">
+                                <span class="sm:flex-col md:inline-block align-middle">
                     <p>Email</p>
                     <p id="mailtext">Contact me here!</p>
                 </span>
+                            </div>
+
+
+                        </a>
+                        <div class="inline-block float-left w-1/3 text-white text-center flex justify-center flex-col align-middle">Hi</div>
                     </div>
 
 
-                </a>
-                <div class="inline-block float-left w-1/3 text-white text-center flex justify-center flex-col align-middle">Hi</div>
-            </div>
+                    <div id='row2' class='text-center text-white h-40 flex justify-center align-middle'>
+                        <div class="inline-block float-left w-1/2 text-white text-center flex justify-center flex-col align-middle">Hi</div>
 
+                        <div class="inline-block float-left w-1/2 text-white text-center flex justify-center flex-col align-middle">Hi</div>
 
-            <div id='row2' class='text-center text-white h-40 flex justify-center align-middle'>
-                <div class="inline-block float-left w-1/2 text-white text-center flex justify-center flex-col align-middle">Hi</div>
+                    </div>
+                </div>
 
-                <div class="inline-block float-left w-1/2 text-white text-center flex justify-center flex-col align-middle">Hi</div>
+            </section>
 
-            </div>
+            <div id="about"></div>
+
         </div>
 
-    </section>
+        <div class="w-20 flex">
+        </div>
 
-    <div id="about"></div>
-
+    </div>
 
 
     <video id="video" src='assets/get-hyper.mp4' autoplay muted playsinline loop webkit-playsinline style="display:none">

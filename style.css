@@ -44,6 +44,8 @@ body {
 
 .frame {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     width: 100vw;
     height: 100vh;
     line-height: 0;
@@ -70,10 +72,6 @@ body {
     background-color: #fe3fb3;
     color: white;
     text-decoration: wavy;
-}
-
-.frame {
-    flex: 1 1 50%;
 }
 
 #editor {
@@ -124,7 +122,7 @@ body {
 
 canvas {
     width: 100%;
-    height: 100%;
+    height: 200px;
 }
 
 #links {
@@ -132,17 +130,20 @@ canvas {
 }
 
 #row1 {
-    background-color: #fe3fb3;
+    background-color: #0a192f;
 }
 
 #row2 {
-    background-color: #fe3fb3;
+    background-color: #0a192f;
 }
 
 #gradient_time {
-    width: 100%;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(180deg, #0a192f, #fe3fb3);
+    background: #0a192f;
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
 }
 
 
@@ -195,7 +196,7 @@ canvas {
 }
 
 .refresh_logo {
-    background-color: #0a192f
+    width: 200px;
 }
 
 #list_num {
@@ -219,30 +220,20 @@ img {
     border-radius: 5px;
 }
 
-#skills_container {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
+#skills_heading {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: clamp(26px, 5vw, var(--fz-heading));
+    white-space: nowrap;
 }
 
-#skills_writing {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-}
-
-@media screen and (max-width: 770px) {
-    #skills_wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-    #skills_container {
-        width: calc(100% - 50px);
-    }
-    #skills_writing {
-        width: calc(100% - 50px);
-    }
-}
-
-#skills_list {
-    font-family: Ubuntu;
-    color: white;
+#stickpls {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 100;
 }
