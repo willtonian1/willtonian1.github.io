@@ -21,6 +21,9 @@ body {
     overflow-x: hidden
 }
 
+
+/* If I ever need a scrollbar */
+
  ::-webkit-scrollbar {
     background-color: #1a1a1a;
 }
@@ -41,7 +44,8 @@ body {
     background-color: #fe3fb3;
 }
 
-.outer {}
+
+/* Main Content */
 
 .frame {
     display: flex;
@@ -200,30 +204,8 @@ canvas {
     transition-delay: 0.05s;
 }
 
-img {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto;
-    border-radius: 5px;
-}
 
-#skills_heading {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    position: relative;
-    margin: 10px 0px 40px;
-    width: 100%;
-    font-size: clamp(26px, 5vw, var(--fz-heading));
-    white-space: nowrap;
-}
-
-
-/* Dotted border */
-
-hr.dotted {
-    border-top: 3px dotted #fe3fb3;
-}
+/* Side Panels */
 
 #vl {
     border-left: 2px solid #fe3fb3;
@@ -236,6 +218,9 @@ hr.dotted {
     height: 100%;
 }
 
+
+/* Side Panels - Right */
+
 #right {
     position: fixed;
     height: 100%;
@@ -246,6 +231,9 @@ hr.dotted {
     height: 100%;
     margin: 0 auto;
 }
+
+
+/* Side Panels -Responsive */
 
 @media screen and (max-width: 660px) {
     #right {
