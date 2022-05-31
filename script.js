@@ -7,35 +7,10 @@ const renderer = new THREE.WebGLRenderer({ canvas: document.querySelector("canva
 // to set it every frame anyway so we'll set it to 2 since 2
 // is the the aspect for the canvas default size (300w/150h = 2)
 const camera = new THREE.PerspectiveCamera(70, 2, 0.01, 1000);
-camera.position.z = 0.5;
+camera.position.z = 0.12;
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x0a192f);
-
-
-
-let video = document.getElementById('video');
-let texture2 = new THREE.VideoTexture(video);
-texture2.needsUpdate;
-texture2.minFilter = THREE.LinearFilter;
-texture2.magFilter = THREE.LinearFilter;
-
-video.src = "assets/get-hyper.mp4";
-video.load();
-video.play();
-
-
-
-const geometry = new THREE.PlaneGeometry(200, 200);
-const material = new THREE.MeshBasicMaterial({
-
-    shading: THREE.SmoothShading,
-    map: texture2,
-    side: THREE.DoubleSide,
-    color: 0xffffff
-
-
-});
 
 const light = new THREE.AmbientLight(0xffffff); // soft white light
 scene.add(light);
@@ -50,14 +25,14 @@ controls.screenSpacePanning = true;
 
 
 
-
-//LOADING £D LOGO MODEL 
+var root
+    //LOADING £D LOGO MODEL 
 const loader2 = new GLTFLoader();
 loader2.load('assets/logo8.glb', function(gltf) {
 
-    gltf.scene.scale.set(9, 9, 9);
+    gltf.scene.scale.set(1, 1, 1);
     scene.add(gltf.scene);
-
+    root = gltf.scene
 
     gltf.scene.traverse(function(object) {
 
@@ -72,6 +47,7 @@ loader2.load('assets/logo8.glb', function(gltf) {
 
 
 renderer.render(scene, camera);
+
 
 function resizeCanvasToDisplaySize() {
     const canvas = renderer.domElement;
@@ -90,13 +66,12 @@ function resizeCanvasToDisplaySize() {
 
 
 function animate(time) {
+
     time *= 0.001; // seconds
 
     resizeCanvasToDisplaySize();
 
-
-
-    texture2.needsUpdate = true;
+    //root.rotation.y += 0.05;
 
     renderer.render(scene, camera);
     requestAnimationFrame(animate);

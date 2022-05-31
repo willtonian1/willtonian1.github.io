@@ -111,9 +111,6 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    #navbar {
-        display: none;
-    }
     #intro_tease {
         margin-top: 20px;
     }
@@ -230,9 +227,9 @@ img {
     white-space: nowrap;
 }
 
-#stickpls {
-    position: -webkit-sticky;
-    /* Safari */
-    position: sticky;
-    top: 100;
+
+/* Dotted border */
+
+hr.dotted {
+    border-top: 3px dotted #bbb;
 }
