@@ -5,6 +5,7 @@ html {
     background-color: #0a192f;
     font-family: Ubuntu;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 *,
@@ -98,9 +99,10 @@ body {
 
 @media screen and (max-width: 1024px) {
     .frame {
-        flex-direction: column;
-        width: 100%;
+        /*flex-direction: column;*/
+        width: 90%;
         height: 50%;
+        margin: 0 auto;
     }
     #editor {
         width: 100%;
@@ -110,36 +112,24 @@ body {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 660px) {
     #intro_tease {
         margin-top: 20px;
+    }
+    #title_for_small {
+        display: block;
+    }
+    ul {
+        display: none;
+    }
+    #navbar {
+        margin-bottom: 15px;
     }
 }
 
 canvas {
     width: 100%;
     height: 200px;
-}
-
-#links {
-    font-family: Ubuntu;
-}
-
-#row1 {
-    background-color: #0a192f;
-}
-
-#row2 {
-    background-color: #0a192f;
-}
-
-#gradient_time {
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: #0a192f;
-    visibility: visible;
-    opacity: 1;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
 }
 
 
@@ -189,6 +179,7 @@ canvas {
     float: left;
     color: #fe3fb3;
     height: 52px;
+    margin-left: 15px;
 }
 
 .refresh_logo {
@@ -231,5 +222,36 @@ img {
 /* Dotted border */
 
 hr.dotted {
-    border-top: 3px dotted #bbb;
+    border-top: 3px dotted #fe3fb3;
+}
+
+#vl {
+    border-left: 2px solid #fe3fb3;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#left {
+    position: fixed;
+    height: 100%;
+}
+
+#right {
+    position: fixed;
+    height: 100%;
+}
+
+#vl2 {
+    border-left: 2px solid #fe3fb3;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 660px) {
+    #right {
+        display: none;
+    }
+    #left {
+        display: none;
+    }
 }
