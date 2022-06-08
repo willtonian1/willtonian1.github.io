@@ -127,8 +127,11 @@
                 }
                 
                 canvas {
-                    width: 100%;
+                    width: 90%;
+                    margin: 0 auto;
                     height: 350px;
+                    border: 1px solid #fe3fb3;
+                    border-radius: 5px;
                 }
                 /*navbar*/
                 
