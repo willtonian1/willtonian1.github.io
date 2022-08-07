@@ -19,6 +19,15 @@
                     height: 100%;
                     overflow-x: hidden
                 }
+
+:root{
+--main: #fe3fb3;
+--bg: #0a192f;
+--txt: #ffffff;
+--secondarytxt:#ccd6f6;
+}
+
+
                 /* If I ever need a scrollbar */
                 
                  ::-webkit-scrollbar {
@@ -51,7 +60,7 @@
                 }
                 
                 #intro_tease {
-                    color: #fe3fb3;
+                    color: var(--main);
                     text-decoration: italic;
                 }
                 
@@ -61,14 +70,14 @@
                 }
                 
                 #txt {
-                    background: #8892b0;
+                    background: var(--secondarytxt);
                     -webkit-background-clip: text;
                     background-clip: text;
                     color: transparent;
                 }
                 
                 #cv_button:hover {
-                    background-color: #fe3fb3;
+                    background-color: var(--main);
                     color: white;
                     text-decoration: wavy;
                 }
@@ -76,7 +85,7 @@
                 #editor {
                     font-family: Ubuntu;
                     padding: .5em;
-                    background: #0a192f;
+                    background: var(--bg);
                     color: white;
                     width: 50%;
                 }
@@ -92,7 +101,7 @@
                 }
                 
                 #interact_sign {
-                    color: #fe3fb3;
+                    color: var(--main);
                     text-align: center;
                 }
                 
@@ -130,7 +139,7 @@
                     width: 90%;
                     margin: 0 auto;
                     height: 350px;
-                    border: 1px solid #8892b0;
+                    border: 1px solid var(--secondarytxt);
                     border-radius: 5px;
                 }
                 /*navbar*/
@@ -141,7 +150,7 @@
                     right: 0;
                     text-align: left;
                     margin-top: 5px;
-                    background-color: #0a192f;
+                    background-color: var(--bg);
                 }
                 
                 #navlist {
@@ -149,12 +158,12 @@
                     margin: 0;
                     padding: 0;
                     overflow: hidden;
-                    background-color: #0a192f;
+                    background-color: var(--bg);
                 }
                 
                 #navlist {
                     float: left;
-                    background-color: #0a192f
+                    background-color: var(--bg);
                 }
                 
                 .nav_link {
@@ -164,7 +173,7 @@
                     text-align: center;
                     padding: 16px;
                     text-decoration: none;
-                    background-color: #0a192f
+                    background-color: var(--bg);
                 }
                 
                 #logo {
@@ -178,7 +187,7 @@
                     text-align: center;
                     text-decoration: none;
                     float: left;
-                    color: #fe3fb3;
+                    color: var(--main);
                     height: 52px;
                     margin-left: 15px;
                     margin-top: 15px;
@@ -189,22 +198,22 @@
                 }
                 
                 #list_num {
-                    color: #fe3fb3;
+                    color: var(--main);
                 }
                 
                 #list_writing {
-                    color: #ccd6f6
+                    color: var(--secondarytxt);
                 }
                 
                 #nav_links1:hover #list_writing {
-                    color: #fe3fb3;
+                    color: var(--main);
                     transition-timing-function: ease-in;
                     transition-delay: 0.05s;
                 }
                 /* Side Panels */
                 
                 #vl {
-                    border-left: 2px solid #fe3fb3;
+                    border-left: 2px solid var(--main);
                     height: 100%;
                     margin: 0 auto;
                 }
