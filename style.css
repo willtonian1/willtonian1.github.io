@@ -230,7 +230,7 @@
                 }
                 
                 #vl2 {
-                    border-left: 2px solid #fe3fb3;
+                    border-left: 2px solid var(--main);
                     height: 90%;
                     margin: 0 auto;
                 }
@@ -247,7 +247,7 @@
                 
                 #email_string {
                     writing-mode: vertical-rl;
-                    color: white;
+                    color: var(--secondarytxt);
                     text-align: center;
                     margin: 0 auto;
                     bottom: 100px;
@@ -272,7 +272,7 @@
                 /* Solid border */
                 
                 hr.solid {
-                    border-top: 3px solid #fe3fb3;
+                    border-top: 3px solid var(--main);
                     width: 90%;
                     margin: 0 auto;
                     margin-top: 10px;
