@@ -1,8 +1,14 @@
-                /* I did this so that the canvas can fit the window */
+
+:root{
+--main: #ffcc33;
+--bg: #0a192f;
+--txt: #ffffff;
+--secondarytxt:#ccd6f6;
+
                 
                 html {
                     box-sizing: border-box;
-                    background-color: #0a192f;
+                    background-color: var(--bg);
                     font-family: Ubuntu;
                     scroll-behavior: smooth;
                 }
@@ -20,12 +26,7 @@
                     overflow-x: hidden
                 }
 
-:root{
---main: #fe3fb3;
---bg: #0a192f;
---txt: #ffffff;
---secondarytxt:#ccd6f6;
-}
+
 
 
                 /* If I ever need a scrollbar */
