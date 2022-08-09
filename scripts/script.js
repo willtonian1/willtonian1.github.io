@@ -39,7 +39,7 @@ loader2.load('assets/logo8.glb', function(gltf) {
     });
 
 
-
+root.material.color = #ffcc33;
 
 });
 
