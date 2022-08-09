@@ -72,7 +72,7 @@ function animate(time) {
 
     resizeCanvasToDisplaySize();
 
-    if (root) root.rotation.y -= 0.05
+    if (root) root.rotation.y -= 0.02
 
     renderer.render(scene, camera);
     requestAnimationFrame(animate);
