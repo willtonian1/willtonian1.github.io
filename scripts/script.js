@@ -26,7 +26,7 @@ controls.screenSpacePanning = true;
 var root
     //LOADING £D LOGO MODEL 
 const loader2 = new GLTFLoader();
-loader2.load('assets/logo8.glb', function(gltf) {
+loader2.load('assets/logo11.glb', function(gltf) {
 
     gltf.scene.scale.set(1, 1, 1);
     scene.add(gltf.scene);
@@ -38,8 +38,6 @@ loader2.load('assets/logo8.glb', function(gltf) {
 
     });
 
-
-root.material.color = #ffcc33;
 
 });
 
