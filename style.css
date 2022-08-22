@@ -214,6 +214,10 @@ canvas {
     transition-delay: 0.05s;
 }
 
+#about_title {
+    color: var(--main)
+}
+
 
 /* Side Panels */
 
