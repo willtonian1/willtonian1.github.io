@@ -173,9 +173,9 @@ body {
     line-height: 0;
     position: relative;
     border: 1px solid white;
-    margin-bottom: 20px;
     display: inline-block;
-margin: 0 auto; 
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 #rugby2 {
@@ -208,7 +208,39 @@ canvas {
     border-radius: 50%;
     position: relative;
     border: 1px solid white;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+/*f1draft*/
+
+#image_holder3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    line-height: 0;
+    position: relative;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#f1draft {
+    top: 5px;
+    left: 5px;
+    width: 190px;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 770px) {
+    #circles_holder {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
