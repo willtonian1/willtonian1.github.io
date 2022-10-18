@@ -178,6 +178,11 @@ body {
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
 
@@ -278,7 +283,17 @@ canvas {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1100px) {
+    #circles_holder {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-row: auto auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
     #circles_holder {
         display: flex;
         flex-direction: column;
