@@ -8,7 +8,7 @@ const camera = new THREE.PerspectiveCamera(70, 2, 0.01, 1000);
 camera.position.z = 0.12;
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x0a192f);
+scene.background = new THREE.Color(0x161617);
 //scene.background = new THREE.Color(0x000000);
 
 const light = new THREE.AmbientLight(0xffffff); // soft white light
