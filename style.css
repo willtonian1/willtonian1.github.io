@@ -1,6 +1,6 @@
 :root {
     --main: #ffcc33;
-    --bg: #171717;
+    --bg: #161617;
     --txt: #ffffff;
     --secondarytxt: #ccd6f6;
 }
@@ -60,6 +60,9 @@ body {
     line-height: 0;
 }
 
+
+/*Top Section*/
+
 #main_intro {
     display: inline-block;
     position: relative;
@@ -67,21 +70,41 @@ body {
     color: rgb(64, 11, 124);
 }
 
+
+/*image*/
+
 #intro_image {
-    box-shadow: inset 0px 0px 10px 20px white;
+    z-index: 100;
+    position: relative;
+    top: 0px;
+    right: 10px;
+    width: calc(100% - 100px);
+    margin: 0 auto;
 }
 
-#whole_intro {
+#image_shadow {
+    border: 1px solid white;
+    margin: 0 auto;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 100%;
+    width: calc(100% - 100px);
+    top: 20px;
+    left: 60px;
 }
+
+#intro_image_container {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#whole_intro {}
 
 #intro_tease {
     color: var(--main);
     text-decoration: italic;
     position: relative;
+    margin-bottom: 5px;
 }
 
 #intro {
@@ -153,11 +176,9 @@ body {
 
 #circles_holder {
     margin: 0 auto;
-    margin-top: 35px;
+    margin-top: 60px;
     margin-bottom: 20px;
 }
-
-#circles_holder {}
 
 
 /*First Image*/
