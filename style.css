@@ -167,8 +167,10 @@ canvas {
     font-family: Ubuntu;
     text-align: center;
     margin-top: 15px;
-    font-size: 13px;
+    font-size: 12px;
     height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .content_button_holder {

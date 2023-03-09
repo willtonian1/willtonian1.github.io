@@ -1,7 +1,7 @@
 import { GLTFLoader } from './GLTFLoader.js';
 import { OrbitControls } from './OrbitControls.js';
 
-const renderer = new THREE.WebGLRenderer({ canvas: document.querySelector("canvas") });
+const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("c") });
 
 
 const camera = new THREE.PerspectiveCamera(70, 2, 0.01, 1000);
@@ -110,21 +110,21 @@ function previous() {
         element2.style.display = "block";
 
     }
-    if (current_slide > 1){
-        current_slide = current_slide -1
+    if (current_slide > 1) {
+        current_slide = current_slide - 1
         element1.style.display = "none";
         element2.style.display = "block";
-}
-    
-    if (current_slide < 0){
+    }
+
+    if (current_slide < 0) {
         element1.style.display = "block";
         element2.style.display = "none";
         current_slide = current_slide + 1
     }
-    
-    
-    
-    
+
+
+
+
 
 
 }
@@ -146,14 +146,14 @@ function next() {
         element2.style.display = "block";
 
     }
-    
-    if (current_slide > 1){
-        current_slide = current_slide -1
+
+    if (current_slide > 1) {
+        current_slide = current_slide - 1
         element1.style.display = "none";
         element2.style.display = "block";
-}
-    
-    if (current_slide < 0){
+    }
+
+    if (current_slide < 0) {
         element1.style.display = "block";
         element2.style.display = "none";
         current_slide = current_slide + 1
