@@ -23,10 +23,148 @@
 
     <script src="scripts/three.js"></script>
     <script type="module" src="scripts/GLTFLoader.js"></script>
-    <script type="module" src="scripts/script.js">
+    <script type="module" src="scripts/script.js"></script>
+    <div id="small_baby">
+        <section class="page">
 
-    </script>
-    <div class='flex inline'>
+            <div id="yellow_gradient">
+
+
+
+            </div>
+
+            <div id="canvas_holder" class="text-center">
+
+                <canvas id="c"></canvas>
+
+            </div>
+
+            <div class="information">
+
+                <div class="intro">
+                    <h2>Hi, my name is</h2>
+                </div>
+
+                <div class="name">
+                    <h1>Tom Williams</h1>
+                </div>
+
+                <div class="description">
+                    <p>Currently studying @Hampton School, and learning Computer Science</p>
+                </div>
+
+            </div>
+
+            <div class="links">
+
+                <div class="cv_button_holder">
+                    <a id='cv_button' href="assets/cv-tw (05-03-23).pdf" target="_blank" class='border rounded-lg mt-15' style="border-color: var(--main)">View CV</a>
+                </div>
+
+                <div class="socials">
+
+                    <a class='flex text-center' style="width:20px; height: 20px; margin: 0 auto;" href="https://www.fiverr.com/share/9LwdxD">
+                        <img src="assets/fiverr.svg"></img>
+
+                    </a>
+
+                    <div style="width:20px;"></div>
+
+                    <a class='flex text-center' style="width:20px; height: 20px; margin: 0 auto; " href="https://www.instagram.com/tomwtech/">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><title>Instagram</title><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+
+                    <div style="width:20px;"></div>
+
+                    <a class='flex text-center' style="width:20px; height: 20px; margin: 0 auto;" href="https://github.com/willtonian1">
+                        <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+
+                    <div style="width:20px;"></div>
+
+                    <a class='flex text-center' style="width:20px; height: 20px; margin: 0 auto; " href="https://www.tiktok.com/tomwtech/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-tiktok" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" id="mainIconPathAttribute" fill="#ffffff"></path> </svg>
+                    </a>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </section>
+
+
+        <section class="box" id="f1">
+            <div id="selection1">
+                <div class="f1_title">
+
+                    <h1 class="f1_title_text">F1 Draft</h1>
+                    <img class="f1_logo_pic" src="assets/f1Draft2.svg">
+
+                </div>
+
+
+                <div class="f1_description">
+                    F1 Draft is my own personal project.
+
+                </div>
+            </div>
+
+
+
+            <div id="selection2">
+                <div class="f1_title">
+
+                    <h1 class="f1_title_text">Barnes Rugby</h1>
+                    <img class="f1_logo_pic" src="assets/f1Draft2.svg">
+
+                </div>
+
+
+                <div class="f1_description">
+                    Barnes RFC
+                </div>
+            </div>
+
+            <div class="content_selection">
+
+                <div class="content_button_holder">
+                    <button class="content_button_previous" id="prev">Previous</button>
+
+                    <button class="content_button_next" id="next">Next</button>
+                </div>
+
+            </div>
+
+    </div>
+
+    <div style="margin-top: 20px;"></div>
+
+    </section>
+        
+
+
+
+
+
+
+    </div>
+
+
+
+    <!--
+    <div class="line1"></div>
+            <h1 class="f1_title_text">F1 Draft</h1>
+            <img class="f1_logo_pic" src="assets/f1Draft2.svg">
+            <div class="line2"></div>
+-->
+
+
+    <div class='flex inline' id="wide_baby">
 
         <div class="w-20 flex flex-col" id="left">
 
@@ -67,6 +205,7 @@
 
 
         </div>
+
         <div class="w-full">
             <nav id='navbar' class="text-2xl inline md:text-sm mb-15">
 
@@ -103,7 +242,6 @@
                         </li>
                     </ul>
             </nav>
-
 
             <div class="frame">
 
@@ -155,14 +293,14 @@
                     <div id='about' class='text-white text-center flex justify-center flex-col align-middle mt-0 mb-10'>
                         <div id="about_title" class="mt-10 bold">About Me</div>
 
-                        <p class="text-sm mt-5 w-9/12 m-auto"> I am currently working on a few side projects away from all school studies, including F1Draft.com which uses a flask backend service. My goal is to become highly proficient in Flask and python apps in order to create
-                            ML services and to use Python for Data Science. I mostly use plain JS in the frontend, but am considering pickng up a framework like React in the near future. I have also experimented using languages like Arduino and C++ to control hardware and have also used a lot of
-                            Pygame to manage GUI solutions in Python.
+                        <p class="text-sm mt-5 w-9/12 m-auto"> I am currently working on a few side projects away from all school studies, including F1Draft.com which uses a flask backend service. My goal is to become highly proficient in Flask and python apps in order to create ML services
+                            and to use Python for Data Science. I mostly use plain JS in the frontend, but am considering pickng up a framework like React in the near future. I have also experimented using languages like Arduino and C++ to control hardware
+                            and have also used a lot of Pygame to manage GUI solutions in Python.
                         </p>
-                        
+
                         <br/>
-                 
-                        <p class="text-sm mt-5 w-9/12 m-auto" >A-level Computer Science - Year 1.</p>
+
+                        <p class="text-sm mt-5 w-9/12 m-auto">A-level Computer Science - Year 1.</p>
                         <br/>
                         <p class="text-sm mt-5 w-9/12 m-auto">
                             Playing U18 Rugby for both Hampton School XV and Barnes RFC - Tennis at Southfields Lawn Tennis Club - LTA Level 1 Assistant Coach
@@ -171,61 +309,24 @@
 
 
 
-                    <hr id='small_separator' class="solid">
 
 
-                    <div id='links_sm' class="hidden mt-10">
-
-                        <a class='flex text-center' style="width:20px; height: 20px; margin: 0 auto;" href="https://www.fiverr.com/share/9LwdxD">
-                            <img src="assets/fiverr.svg"></img>
-
-                        </a>
-                        <div style="width:20px;"></div>
-
-                        <a class='flex text-center' style="width:20px; height: 20px; margin: 0 auto; " href="https://www.instagram.com/tomwtech/">
-                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><title>Instagram</title><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                        </a>
-
-                        <div style="width:40px;"></div>
-                        <a href="mailto:tomwtech@gmail.com" class="text-xs">tomwtech@gmail.com</a>
-                        <div style="width:40px;"></div>
-
-                        <a class='flex text-center' style="width:20px; height: 20px; margin: 0 auto;" href="https://github.com/willtonian1">
-                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                        </a>
-
-                        <div style="width:20px;"></div>
-
-
-                        <a class='flex text-center' style="width:20px; height: 20px; margin: 0 auto; " href="https://www.tiktok.com/tomwtech/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-tiktok" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" id="mainIconPathAttribute" fill="#ffffff"></path> </svg>
-                        </a>
-
-
-
-
-
-                    </div>
 
 
                 </div>
             </div>
 
+            <div id='right' class="w-20 flex flex-col" style="top: 9px; left: auto; right: 20px;height: 96%; position:fixed;">
+
+
+                <a href="mailto:tomwtech@gmail.com" class="flex m-auto text-white border border-white rounded-lg p-1">Contact</a>
+                <br>
+                <div id="vl2" class="flex mt-10"></div>
+                <br>
+                <a id="email_string" href="mailto:tomwtech@gmail.com" class="text-xs">tomwtech@gmail.com</a>
+            </div>
+
+
         </div>
-        <div id='right' class="w-20 flex flex-col" style="top: 9px; left: auto; right: 20px;height: 96%; position:fixed;">
 
-
-            <a href="mailto:tomwtech@gmail.com" class="flex m-auto text-white border border-white rounded-lg p-1">Contact</a>
-            <br>
-            <div id="vl2" class="flex mt-10"></div>
-            <br>
-            <a id="email_string" href="mailto:tomwtech@gmail.com" class="text-xs">tomwtech@gmail.com</a>
-        </div>
-
-
-    </div>
-    <br><br><br>
-    <br>
 </body>
-
-</html>
