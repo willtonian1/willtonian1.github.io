@@ -168,9 +168,40 @@ canvas {
     text-align: center;
     margin-top: 15px;
     font-size: 12px;
-    height: 200px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+#f1draft_link {
+    margin: 0 auto;
+    color: var(--main);
+    font-family: Ubuntu;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+#flask_image {
+    width: 70px;
+    height: 30px;
+}
+
+#take_a_look {
+    border: 1px solid var(--main);
+    border-radius: 15px;
+    padding-right: 4px;
+    padding-left: 4px;
+    height: 30px;
+    margin-top: 0px;
+    font-size: 12px;
+    padding-top: 5px;
+    align-items: center;
+    justify-self: center;
 }
 
 .content_button_holder {
